@@ -47,7 +47,7 @@ python3 -m venv ml_env
 # Activate the virtual environment
 source ml_env/bin/activate
 
-##Install dependencies with:
+# Install dependencies with:
 pip install -r requirements.txt
 
 
@@ -71,10 +71,10 @@ After applying compression techniques. Inside output_models folder, below models
 ## How to test the accuracy of any model
 - **Usage**:
 ```bash
-# Test the accuracy of uncompressed model
+# Test the accuracy of uncompressed (full-precision) model
 python test_accuracy.py --model checkpoints/mobilenet_v2_cifar10.pth
 
-# Test the accuracy of compressed models
+# Test the accuracy of compressed/quantized models (examples)
 python test_accuracy.py --model output_models/mobilenet_w8_a8.pth
 python test_accuracy.py --model output_models/mobilenet_w8_a6.pth
 python test_accuracy.py --model output_models/mobilenet_w8_a4.pth
