@@ -54,7 +54,10 @@ pip install -r requirements.txt
 
 ## Model trained on CIFAR-10 dataset
 We provide a trained MobileNet-v2 model trained on CIFAR-10:
-- **Model after training**: checkpoints/mobilenet_v2_cifar10.pth
+```bash
+- **Model after training**:
+    checkpoints/mobilenet_v2_cifar10.pth
+```
 
 ## Compressed models
 After applying compression techniques. Inside output_models folder, below models are present:
