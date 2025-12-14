@@ -35,12 +35,13 @@ Additionally, `torch.backends.cudnn.deterministic` is set to `True`.
 
 Follow these steps to set up the environment and run the code.
 
-## 1. Create and Activate the Virtual Environment
+## Create and Activate the Virtual Environment
 
 It is highly recommended to use a virtual environment to manage dependencies.
 
 ```bash
 # Navigate to your project directory
+
 # Create a Python 3 virtual environment named 'ml_env'
 python3 -m venv ml_env
 
@@ -57,6 +58,7 @@ We provide a trained MobileNet-v2 model trained on CIFAR-10:
 
 ## Compressed models
 After applying compression techniques. Inside output_models folder, below models are present:
+```bash
 - mobilenet_w8_a8.pth
 - mobilenet_w8_a6.pth
 - mobilenet_w8_a4.pth
@@ -66,6 +68,7 @@ After applying compression techniques. Inside output_models folder, below models
 - mobilenet_w4_a4.pth
 - mobilenet_w3_a3.pth
 - mobilenet_w2_a2.pth
+```
 
 
 ## How to test the accuracy of any model
@@ -73,7 +76,9 @@ After applying compression techniques. Inside output_models folder, below models
 ```bash
 # Test the accuracy of uncompressed (full-precision) model
 python test_accuracy.py --model checkpoints/mobilenet_v2_cifar10.pth
+```
 
+```bash
 # Test the accuracy of compressed/quantized models (examples)
 python test_accuracy.py --model output_models/mobilenet_w8_a8.pth
 python test_accuracy.py --model output_models/mobilenet_w8_a6.pth
@@ -84,3 +89,4 @@ python test_accuracy.py --model output_models/mobilenet_w4_a8.pth
 python test_accuracy.py --model output_models/mobilenet_w4_a4.pth
 python test_accuracy.py --model output_models/mobilenet_w3_a3.pth
 python test_accuracy.py --model output_models/mobilenet_w2_a2.pth
+```
