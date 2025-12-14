@@ -1,0 +1,10 @@
+weight_bits,act_bits,model_filename,size_mb
+8,8,output_models/mobilenet_w8_a8.pth,2.54
+8,6,output_models/mobilenet_w8_a6.pth,2.54
+8,4,output_models/mobilenet_w8_a4.pth,2.54
+6,6,output_models/mobilenet_w6_a6.pth,2.54
+5,5,output_models/mobilenet_w5_a5.pth,2.54
+4,8,output_models/mobilenet_w4_a8.pth,2.54
+4,4,output_models/mobilenet_w4_a4.pth,2.54
+3,3,output_models/mobilenet_w3_a3.pth,2.54
+2,2,output_models/mobilenet_w2_a2.pth,2.54
