@@ -49,7 +49,7 @@ source ml_env/bin/activate
 
 # Install dependencies with:
 pip install -r requirements.txt
-
+```
 
 ## Model trained on CIFAR-10 dataset
 We provide a trained MobileNet-v2 model trained on CIFAR-10:
