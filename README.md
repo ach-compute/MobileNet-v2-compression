@@ -49,3 +49,38 @@ source ml_env/bin/activate
 
 ##Install dependencies with:
 pip install -r requirements.txt
+
+
+## Model trained on CIFAR-10 dataset
+We provide a trained MobileNet-v2 model trained on CIFAR-10:
+- **Model after training**: checkpoints/mobilenet_v2_cifar10.pth
+
+## Compressed models
+After applying compression techniques. Inside output_models folder, below models are present:
+- mobilenet_w8_a8.pth
+- mobilenet_w8_a6.pth
+- mobilenet_w8_a4.pth
+- mobilenet_w6_a6.pth
+- mobilenet_w5_a5.pth
+- mobilenet_w4_a8.pth
+- mobilenet_w4_a4.pth
+- mobilenet_w3_a3.pth
+- mobilenet_w2_a2.pth
+
+
+## How to test the accuracy of any model
+- **Usage**:
+```bash
+# Test the accuracy of uncompressed model
+python test_accuracy.py --model checkpoints/mobilenet_v2_cifar10.pth
+
+# Test the accuracy of compressed models
+python test_accuracy.py --model output_models/mobilenet_w8_a8.pth
+python test_accuracy.py --model output_models/mobilenet_w8_a6.pth
+python test_accuracy.py --model output_models/mobilenet_w8_a4.pth
+python test_accuracy.py --model output_models/mobilenet_w6_a6.pth
+python test_accuracy.py --model output_models/mobilenet_w5_a5.pth
+python test_accuracy.py --model output_models/mobilenet_w4_a8.pth
+python test_accuracy.py --model output_models/mobilenet_w4_a4.pth
+python test_accuracy.py --model output_models/mobilenet_w3_a3.pth
+python test_accuracy.py --model output_models/mobilenet_w2_a2.pth
