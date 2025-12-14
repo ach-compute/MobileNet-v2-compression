@@ -35,7 +35,7 @@ Additionally, `torch.backends.cudnn.deterministic` is set to `True`.
 
 Follow these steps to set up the environment and run the code.
 
-### 1. Create and Activate the Virtual Environment
+## 1. Create and Activate the Virtual Environment
 
 It is highly recommended to use a virtual environment to manage dependencies.
 
